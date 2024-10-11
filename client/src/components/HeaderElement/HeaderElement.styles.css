@@ -1,0 +1,58 @@
+.header-element {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+}
+
+.header-element:hover {
+  background-color: var(--icon-hover-color);
+}
+
+.header-element svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: var(--icon-color);
+}
+
+.header-element .tool-tip {
+  position: absolute;
+  background-color: var(--tool-tip-bg-color);
+  width: fit-content;
+  text-wrap: nowrap;
+  bottom: -1.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.3rem 0.55rem;
+  border-radius: 0.3rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.header-element:hover .tool-tip {
+  opacity: 0.95;
+  pointer-events: unset;
+}
+
+.search-icon-box:hover {
+  background-color: var(--search-icon-box-color);
+}
+
+.search-icon-box .tool-tip {
+  bottom: -2rem;
+}
+
+.settings-element:hover svg {
+  fill: black;
+}
+
+.settings-element .tool-tip {
+  bottom: -1.6rem;
+}
